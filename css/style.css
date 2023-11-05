@@ -1,0 +1,22 @@
+.container {  display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas:
+    "top-grid top-grid top-grid sport sport "
+    "top-grid top-grid top-grid sport sport "
+
+    "bottom-grid bottom-grid bottom-grid sport sport"
+    "bottom-grid bottom-grid bottom-grid sport sport"
+    ;
+    grid-gap: 10px;
+
+}
+.box {
+    color: black;
+    background: #aaa;
+}
+
+.sport { grid-area: sport; }
+
+.top-grid { grid-area: top-grid; }
+
+.bottom-grid { grid-area: bottom-grid; }
